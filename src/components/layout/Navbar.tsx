@@ -1,0 +1,130 @@
+"use client";
+
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+
+type NavItem = {
+  label: string;
+  href: string;
+};
+
+interface NavMenuProps {
+  navigationItems: NavItem[];
+}
+
+const Navbar: React.FC<NavMenuProps> = ({ navigationItems }) => {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Detect scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white/90 shadow-md backdrop-blur-sm"
+          : "bg-transparent"
+      }`}
+    >
+      <div className="container mx-auto flex items-center justify-between px-5 py-4">
+        {/* Brand */}
+        <Link
+          href="/"
+          className={`text-2xl font-semibold tracking-wide ${
+            scrolled ? "text-gray-900" : "text-white"
+          }`}
+          style={{ fontFamily: "Montserrat, Helvetica" }}
+        >
+          TRAVEL
+        </Link>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center space-x-8">
+          {navigationItems.map((item, index) => (
+            <Link
+              key={index}
+              href={item.href}
+              className={`font-medium text-base transition-colors duration-300 ${
+                scrolled
+                  ? "text-gray-800 hover:text-yellow-500"
+                  : "text-white hover:text-yellow-400"
+              }`}
+              style={{ fontFamily: "Montserrat, Helvetica" }}
+            >
+              {item.label}
+            </Link>
+          ))}
+
+          {/* Register Button */}
+          <Link
+            href="#"
+            className="font-medium text-base text-yellow-500 hover:text-yellow-600 transition-colors duration-300"
+            style={{ fontFamily: "Montserrat, Helvetica" }}
+          >
+            Register
+          </Link>
+        </div>
+
+        {/* Mobile Menu Toggle */}
+        <button
+          className="md:hidden p-2 text-2xl transition-colors"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? (
+            <X
+              className={`w-6 h-6 ${
+                scrolled ? "text-gray-800" : "text-white"
+              }`}
+            />
+          ) : (
+            <Menu
+              className={`w-6 h-6 ${
+                scrolled ? "text-gray-800" : "text-white"
+              }`}
+            />
+          )}
+        </button>
+      </div>
+
+      {/* Mobile Dropdown */}
+      {menuOpen && (
+        <div
+          className={`md:hidden flex flex-col items-center space-y-4 pb-6 transition-all duration-300 ${
+            scrolled ? "bg-white/95" : "bg-black/80"
+          }`}
+        >
+          {navigationItems.map((item, index) => (
+            <Link
+              key={index}
+              href={item.href}
+              className={`font-medium text-lg ${
+                scrolled ? "text-gray-800" : "text-white"
+              } hover:text-yellow-500 transition-colors duration-300`}
+              style={{ fontFamily: "Montserrat, Helvetica" }}
+              onClick={() => setMenuOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <Link
+            href="#"
+            className="font-medium text-lg text-yellow-500 hover:text-yellow-600 transition-colors duration-300"
+            onClick={() => setMenuOpen(false)}
+          >
+            Register
+          </Link>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
