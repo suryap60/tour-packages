@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import AboutSection from "@/components/sections/home/AboutSection";
 import BookNowSection from "@/components/sections/home/BookNow";
@@ -54,6 +55,7 @@ export default function Home() {
       <BookNowSection/>
       <Reviews/>
       <AboutSection/>
+      <Footer/>
     </>
   );
 }
