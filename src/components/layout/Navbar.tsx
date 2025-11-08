@@ -31,11 +31,18 @@ const Navbar: React.FC<NavMenuProps> = ({ navigationItems }) => {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
           ? "bg-white/90 shadow-md backdrop-blur-sm"
-          : "bg-transparent"
+          : "bg-transparent backdrop-blur-xs"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between px-5 py-4">
-        {/* Brand */}
+      <div
+        className={`
+          mx-auto flex items-center justify-between 
+          px-4 sm:px-6 md:px-10 lg:px-16 
+          py-4 md:py-3 
+          max-w-[1400px]
+        `}
+      >
+        {/* Logo / Brand */}
         <Link
           href="/"
           className={`text-2xl font-semibold tracking-wide ${
@@ -47,7 +54,7 @@ const Navbar: React.FC<NavMenuProps> = ({ navigationItems }) => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
           {navigationItems.map((item, index) => (
             <Link
               key={index}
@@ -66,7 +73,9 @@ const Navbar: React.FC<NavMenuProps> = ({ navigationItems }) => {
           {/* Register Button */}
           <Link
             href="#"
-            className="font-medium text-base text-yellow-500 hover:text-yellow-600 transition-colors duration-300"
+            className={`font-medium text-base text-yellow-500 hover:text-yellow-600 transition-colors duration-300 ${
+              scrolled ? "" : "drop-shadow-md"
+            }`}
             style={{ fontFamily: "Montserrat, Helvetica" }}
           >
             Register
@@ -77,6 +86,7 @@ const Navbar: React.FC<NavMenuProps> = ({ navigationItems }) => {
         <button
           className="md:hidden p-2 text-2xl transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle Menu"
         >
           {menuOpen ? (
             <X
@@ -97,7 +107,7 @@ const Navbar: React.FC<NavMenuProps> = ({ navigationItems }) => {
       {/* Mobile Dropdown */}
       {menuOpen && (
         <div
-          className={`md:hidden flex flex-col items-center space-y-4 pb-6 transition-all duration-300 ${
+          className={`md:hidden flex flex-col items-center space-y-4 pb-6 pt-4 transition-all duration-300 ${
             scrolled ? "bg-white/95" : "bg-black/80"
           }`}
         >
