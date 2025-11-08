@@ -16,23 +16,23 @@ export default function DiscoverSection() {
 
         {/* Overlay Gradient */}
         <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-20">
-            <div className="bg-black/50 rounded-3xl p-10 sm:p-12 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-10 shadow-xl">
+            <div className="bg-black/20 rounded-3xl p-10 sm:p-12 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-10">
           {/* Text Section */}
-                <div className="flex-1 text-center lg:text-left">
+                <div className="flex-1 text-left">
                     <h3 className="text-[#ffe500] font-semibold text-2xl sm:text-3xl md:text-4xl">
                     Discover
                     </h3>
-                    <h2 className="text-white font-extrabold text-[#ffe500] text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6">
+                    <h2 className="text-white font-extrabold text-[#ffe500] text-xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
                     Lakshadweep
                     </h2>
-                    <p className="[font-family:'Montserrat',Helvetica] font-light text-white text-2xl sm:text-lg md:text-xl lg:text-2xl max-w-3xl lg:text-left">
+                    <p className="[font-family:'Montserrat',Helvetica] text-lg text-gray-200 max-w-3xl lg:text-left">
                     Lorem Ipsum is simply dummy text of the printing and typesetting
                     industry. Lorem Ipsum has been the industry&#39;s standard dummy
                     text ever since the 1500s, when an unknown printer took a galley
                     of type and scrambled it to make a type specimen book.
                     </p>
 
-                    <button className="mt-8 border border-[#ffe500] text-[#ffe500] text-xl font-extralight px-8 py-3 rounded-[20px] hover:bg-[#ffe500] hover:text-black transition-all duration-300">
+                    <button className="mt-8 border border-[#ffe500] text-[#ffe500] text-xl font-extralight px-8 py-3 rounded-[20px] hover:bg-[#ffe500] hover:text-black/70 transition-all duration-300">
                     Explore →
                     </button>
                 </div>

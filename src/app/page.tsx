@@ -1,5 +1,8 @@
 import Navbar from "@/components/layout/Navbar";
+import AboutSection from "@/components/sections/home/AboutSection";
+import BookNowSection from "@/components/sections/home/BookNow";
 import DiscoverSection from "@/components/sections/home/DiscoverSection";
+import Reviews from "@/components/sections/home/Reviews";
 import Image from "next/image";
 
 export default function Home() {
@@ -24,7 +27,7 @@ export default function Home() {
         />
 
         {/* Overlay Gradient */}
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/20" />
 
         {/* Navbar */}
         <Navbar navigationItems={navigationItems} />
@@ -39,7 +42,7 @@ export default function Home() {
             TITLE
           </h1>
 
-          <p className="[font-family:'Montserrat',Helvetica] font-light text-white text-2xl sm:text-lg md:text-xl lg:text-2xl max-w-3xl">
+          <p className="[font-family:'Montserrat',Helvetica] text-lg text-gray-200 max-w-3xl">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&#39;s standard dummy
             text ever since the 1500s, when an unknown printer took a galley of
@@ -48,6 +51,9 @@ export default function Home() {
         </section>
       </div>
       <DiscoverSection/>
+      <BookNowSection/>
+      <Reviews/>
+      <AboutSection/>
     </>
   );
 }
