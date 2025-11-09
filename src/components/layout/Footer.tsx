@@ -19,37 +19,40 @@ export default function Footer() {
         priority
       />
 
-
       {/* Footer Content */}
       <footer className="relative z-10 w-full">
         <div className="container mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-16">
           <div className="bg-black/30 rounded-3xl p-10 sm:p-12 md:p-16 text-white flex flex-col gap-10">
+            
             {/* Top Row */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+              
               {/* Logo + Social */}
-              <div className="text-between">
-                <h2 className="text-4xl font-bold mb-6">
-                  <span className="text-white">Website</span>{" "} <br />
-                  <span className="text-[#ffe500]">Title</span>
-                </h2>
+              <div className="flex flex-col justify-between h-full">
+                <div>
+                  <h2 className="text-4xl font-bold leading-tight">
+                    <span className="text-white">Website</span> <br />
+                    <span className="text-[#ffe500]">Title</span>
+                  </h2>
+                </div>
 
                 {/* Social Icons */}
-                <div className="flex items-center gap-4 mt-4">
+                <div className="flex items-center gap-4 mt-6">
                   <a
                     href="#"
-                    className="flex items-center justify-center  text-[#ffe500] hover:text-white hover:text-black transition"
+                    className="flex items-center justify-center text-[#ffe500] hover:text-white transition"
                   >
                     <SiFacebook className="w-8 h-8" />
                   </a>
                   <a
                     href="#"
-                    className="flex items-center justify-center  text-[#ffe500] hover:text-white hover:text-black transition"
+                    className="flex items-center justify-center text-[#ffe500] hover:text-white transition"
                   >
                     <BsTwitterX className="w-8 h-8" />
                   </a>
                   <a
                     href="#"
-                    className="flex items-center justify-center  text-[#ffe500] hover:text-white hover:text-black transition"
+                    className="flex items-center justify-center text-[#ffe500] hover:text-white transition"
                   >
                     <FaInstagram className="w-8 h-8" />
                   </a>
@@ -57,40 +60,44 @@ export default function Footer() {
               </div>
 
               {/* Contact Us */}
-              <div>
-                <h3 className="text-[#ffe500] text-xl font-semibold mb-6">
-                  CONTACT US
-                </h3>
-                <a
-                  href="mailto:loremipsum@gmail.com"
-                  className="block text-white text-base mb-4 hover:underline"
-                >
-                  loremipsum@gmail.com
-                </a>
-                <p className="text-white text-base mb-4">
-                  24 Loremipsum, Lorem <br />
-                  Lorem inc
-                </p>
-                <p className="text-white text-base">+34 875 328 58 47</p>
+              <div className="flex flex-col justify-between h-full">
+                <div>
+                  <h3 className="text-[#ffe500] text-xl font-semibold mb-6">
+                    CONTACT US
+                  </h3>
+                  <a
+                    href="mailto:loremipsum@gmail.com"
+                    className="block text-white text-base mb-4 hover:underline"
+                  >
+                    loremipsum@gmail.com
+                  </a>
+                  <p className="text-white text-base mb-4 leading-relaxed">
+                    24 Loremipsum, Lorem <br />
+                    Lorem inc
+                  </p>
+                  <p className="text-white text-base">+34 875 328 58 47</p>
+                </div>
               </div>
 
               {/* Subscribe */}
-              <div>
-                <h3 className="text-[#ffe500] text-xl font-semibold mb-6">
-                  SUBSCRIBE
-                </h3>
-                <p className="text-white text-base mb-4">
-                  Enter your email to get notified about our new trips.
-                </p>
+              <div className="flex flex-col justify-between h-full">
+                <div>
+                  <h3 className="text-[#ffe500] text-xl font-semibold mb-6">
+                    SUBSCRIBE
+                  </h3>
+                  <p className="text-white text-base mb-4 leading-relaxed">
+                    Enter your email to get notified about our new trips.
+                  </p>
 
-                {/* Input with Mail Icon */}
-                <div className="relative mt-4">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full bg-transparent  bg-white/50 rounded-xl py-3 pl-4 pr-12 text-white placeholder:text-white focus:outline-none focus:border-[#ffe500]"
-                  />
-                  <MailIcon className="absolute top-1/2 -translate-y-1/2 right-4 w-6 h-6 text-white" />
+                  {/* Input with Mail Icon */}
+                  <div className="relative mt-4">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      className="w-full bg-white/50 rounded-xl py-3 pl-4 pr-12 text-white placeholder:text-black/50 focus:outline-none focus:border-[#ffe500]"
+                    />
+                    <MailIcon className="absolute top-1/2 -translate-y-1/2 right-4 w-6 h-6 text-black/50" />
+                  </div>
                 </div>
               </div>
             </div>

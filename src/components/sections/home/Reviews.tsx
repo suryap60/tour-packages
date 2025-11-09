@@ -47,7 +47,7 @@ export default function Reviews() {
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className="flex flex-col sm:flex-row lg:flex-col items-center sm:items-start lg:items-center text-center sm:text-left lg:text-center bg-white/10 rounded-2xl p-6 sm:p-8 hover:bg-white/20 transition"
+                className="flex flex-col lg:flex-col items-center sm:items-start lg:items-center text-center sm:text-left lg:text-center bg-white/10 rounded-2xl p-6 sm:p-8 hover:bg-white/20 transition"
               >
                 {/* Reviewer Image */}
                 <Image
