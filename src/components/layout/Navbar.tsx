@@ -31,7 +31,7 @@ const Navbar: React.FC<NavMenuProps> = ({ navigationItems }) => {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
           ? "bg-transparent shadow-md backdrop-blur-md"
-          : "bg-transparent backdrop-blur-xs my-4"
+          : "bg-transparent backdrop-blur-xs"
       }`}
     >
       <div
