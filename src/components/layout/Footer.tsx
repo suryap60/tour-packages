@@ -19,8 +19,6 @@ export default function Footer() {
         priority
       />
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Footer Content */}
       <footer className="relative z-10 w-full">
@@ -29,7 +27,7 @@ export default function Footer() {
             {/* Top Row */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {/* Logo + Social */}
-              <div className="justify-between">
+              <div className="text-between">
                 <h2 className="text-4xl font-bold mb-6">
                   <span className="text-white">Website</span>{" "} <br />
                   <span className="text-[#ffe500]">Title</span>
