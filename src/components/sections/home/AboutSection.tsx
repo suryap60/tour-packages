@@ -42,14 +42,14 @@ export default function AboutSection() {
           <div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 text-left">
               <span className="text-white">About </span>
-              <span className="text-[#ffe500]">Us</span>
+              <span className="primary-color">Us</span>
             </h2>
 
             <div className="space-y-10">
               <div>
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-3">
                   <span className="text-white">Who</span>{" "}
-                  <span className="text-[#ffe500]">We Are?</span>
+                  <span className="primary-color">We Are?</span>
                 </h3>
                 <p className="text-lg text-gray-200 leading-relaxed">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -60,7 +60,7 @@ export default function AboutSection() {
               <div>
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-3">
                   <span className="text-white">Our </span>
-                  <span className="text-[#ffe500]">Mission</span>
+                  <span className="primary-color">Mission</span>
                 </h3>
                 <p className="text-lg text-gray-200 leading-relaxed">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -86,7 +86,7 @@ export default function AboutSection() {
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal mb-10">
             <span className="text-white">WHY </span>
-            <span className="text-[#ffe500]">CHOOSE US?</span>
+            <span className="primary-color">CHOOSE US?</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -95,7 +95,7 @@ export default function AboutSection() {
                 key={index}
                 className="hover:bg-white/20 transition"
               >
-                <h3 className="text-2xl font-semibold text-[#ffe500] mb-4">
+                <h3 className="text-2xl font-semibold primary-color mb-4">
                   {item.title}
                 </h3>
                 <p className="text-lg text-gray-200 leading-relaxed">

@@ -32,7 +32,7 @@ export default function Footer() {
                 <div>
                   <h2 className="text-4xl font-bold leading-tight">
                     <span className="text-white">Website</span> <br />
-                    <span className="text-[#ffe500]">Title</span>
+                    <span className="primary-color">Title</span>
                   </h2>
                 </div>
 
@@ -40,19 +40,19 @@ export default function Footer() {
                 <div className="flex items-center gap-4 mt-6">
                   <a
                     href="#"
-                    className="flex items-center justify-center text-[#ffe500] hover:text-white transition"
+                    className="flex items-center justify-center primary-color hover:text-white transition"
                   >
                     <SiFacebook className="w-8 h-8" />
                   </a>
                   <a
                     href="#"
-                    className="flex items-center justify-center text-[#ffe500] hover:text-white transition"
+                    className="flex items-center justify-center primary-color hover:text-white transition"
                   >
                     <BsTwitterX className="w-8 h-8" />
                   </a>
                   <a
                     href="#"
-                    className="flex items-center justify-center text-[#ffe500] hover:text-white transition"
+                    className="flex items-center justify-center primary-color hover:text-white transition"
                   >
                     <FaInstagram className="w-8 h-8" />
                   </a>
@@ -62,7 +62,7 @@ export default function Footer() {
               {/* Contact Us */}
               <div className="flex flex-col justify-between h-full">
                 <div>
-                  <h3 className="text-[#ffe500] text-xl font-semibold mb-6">
+                  <h3 className="primary-color text-xl font-semibold mb-6">
                     CONTACT US
                   </h3>
                   <a
@@ -82,7 +82,7 @@ export default function Footer() {
               {/* Subscribe */}
               <div className="flex flex-col justify-between h-full">
                 <div>
-                  <h3 className="text-[#ffe500] text-xl font-semibold mb-6">
+                  <h3 className="primary-color text-xl font-semibold mb-6">
                     SUBSCRIBE
                   </h3>
                   <p className="text-white text-base mb-4 leading-relaxed">
@@ -96,7 +96,7 @@ export default function Footer() {
                       placeholder="Email"
                       className="w-full bg-white/50 rounded-xl py-3 pl-4 pr-12 text-white placeholder:text-black/50 focus:outline-none focus:border-[#ffe500]"
                     />
-                    <MailIcon className="absolute top-1/2 -translate-y-1/2 right-4 w-6 h-6 text-black/50" />
+                    <MailIcon className="absolute top-1/2 -translate-y-1/2 primary-color right-4 w-6 h-6" />
                   </div>
                 </div>
               </div>

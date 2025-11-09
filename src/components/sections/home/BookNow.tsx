@@ -57,7 +57,7 @@ export default function BookNowSection() {
           {/* Heading */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 text-left mb-10">
             <span className="text-white">Book Your </span>
-            <span className="text-[#ffe500]">Trip</span>
+            <span className="primary-color">Trip</span>
           </h2>
 
           {/* Swiper Section */}
@@ -67,14 +67,14 @@ export default function BookNowSection() {
               ref={prevRef}
               className="absolute -left-6 sm:-left-10 md:-left-12 top-1/2 -translate-y-1/2 z-20 p-0 rounded-full hover:bg-black/30 hover:bg-black/60 transition"
             >
-              <MdOutlineKeyboardArrowLeft className="text-[#ffe500] w-10 h-10 md:w-12 md:h-12" />
+              <MdOutlineKeyboardArrowLeft className="primary-color w-10 h-10 md:w-12 md:h-12" />
             </button>
 
             <button
               ref={nextRef}
               className="absolute -right-6 sm:-right-10 md:-right-12 top-1/2 -translate-y-1/2 z-20 p-0 rounded-full hover:bg-black/30 hover:bg-black/60 transition"
             >
-              <MdOutlineKeyboardArrowRight className="text-[#ffe500] w-10 h-10 md:w-12 md:h-12" />
+              <MdOutlineKeyboardArrowRight className="primary-color w-10 h-10 md:w-12 md:h-12" />
             </button>
 
             <Swiper
@@ -110,7 +110,7 @@ export default function BookNowSection() {
                     />
                     <div className="mt-4 text-2xl font-bold">
                       <span className="text-white">Lorem </span>
-                      <span className="text-[#ffe500]">Ipsum</span>
+                      <span className="primary-color">Ipsum</span>
                     </div>
                     <Image
                       className="mt-2 w-[110px] h-[18px] object-contain"
@@ -120,7 +120,7 @@ export default function BookNowSection() {
                       height={18}
                     />
                     <button
-                      className={`mt-5 w-full py-2.5 ${card.buttonBg} ${card.buttonText} text-lg font-semibold rounded-xl hover:opacity-90 transition`}
+                      className={`mt-5 w-full py-2.5 ${card.buttonBg} ${card.buttonText} text-lg font-semibold rounded-xl hover:opacity-90 transition cursor-pointer`}
                     >
                       Explore
                     </button>

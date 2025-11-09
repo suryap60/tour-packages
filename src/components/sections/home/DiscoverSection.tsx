@@ -19,10 +19,10 @@ export default function DiscoverSection() {
             <div className="bg-black/20 rounded-3xl p-10 sm:p-12 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-10">
           {/* Text Section */}
                 <div className="flex-1 text-left">
-                    <h3 className="text-[#ffe500] font-semibold text-2xl sm:text-3xl md:text-4xl">
+                    <h3 className="primary-color font-semibold text-2xl sm:text-3xl md:text-4xl">
                     Discover
                     </h3>
-                    <h2 className="text-white font-extrabold text-[#ffe500] text-xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
+                    <h2 className="text-white font-extrabold primary-color text-xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
                     Lakshadweep
                     </h2>
                     <p className="[font-family:'Montserrat',Helvetica] text-lg text-gray-200 max-w-3xl lg:text-left">
@@ -32,7 +32,7 @@ export default function DiscoverSection() {
                     of type and scrambled it to make a type specimen book.
                     </p>
 
-                    <button className="mt-8 border border-[#ffe500] text-[#ffe500] text-xl font-extralight px-8 py-3 rounded-[20px] hover:bg-[#ffe500] hover:text-black/70 transition-all duration-300">
+                    <button className="mt-8 border border-[#ffe500] text-[#ffe500] text-xl font-extralight px-8 py-3 rounded-[20px] hover:bg-[#ffe500] hover:text-white transition-all duration-300 cursor-pointer">
                     Explore →
                     </button>
                 </div>

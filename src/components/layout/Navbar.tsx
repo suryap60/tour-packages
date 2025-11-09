@@ -45,7 +45,7 @@ const Navbar: React.FC<NavMenuProps> = ({ navigationItems }) => {
         {/* Logo / Brand */}
         <Link
           href="/"
-          className={`text-2xl font-semibold tracking-wide ${
+          className={`text-2xl font-semibold tracking-wide cursor-pointer ${
             scrolled ? "text-gray-900" : "text-white"
           }`}
           style={{ fontFamily: "Montserrat, Helvetica" }}
@@ -54,7 +54,7 @@ const Navbar: React.FC<NavMenuProps> = ({ navigationItems }) => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
+        <div className="hidden md:flex items-center space-x-8 lg:space-x-10 cursor-pointer">
           {navigationItems.map((item, index) => (
             <Link
               key={index}
@@ -73,7 +73,7 @@ const Navbar: React.FC<NavMenuProps> = ({ navigationItems }) => {
           {/* Register Button */}
           <Link
             href="#"
-            className={`font-medium text-base text-yellow-500 hover:text-yellow-600 transition-colors duration-300 ${
+            className={`font-medium text-base primary-color transition-colors duration-300 cursor-pointer ${
               scrolled ? "" : "drop-shadow-md"
             }`}
             style={{ fontFamily: "Montserrat, Helvetica" }}

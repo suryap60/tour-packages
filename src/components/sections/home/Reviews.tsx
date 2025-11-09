@@ -82,7 +82,7 @@ export default function Reviews() {
           <div className="mt-12 flex justify-center">
             <a
               href="#"
-              className="text-[#ffe500] text-xl sm:text-2xl font-bold underline hover:text-white transition"
+              className="primary-color text-lg sm:text-2xl font-bold underline hover:text-white transition cursor-pointer"
             >
               View all
             </a>

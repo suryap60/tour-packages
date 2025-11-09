@@ -39,7 +39,7 @@ export default function Home() {
             WEBSITE
           </h2>
 
-          <h1 className="font-extrabold text-[#ffe500] text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
+          <h1 className="font-extrabold primary-color text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
             TITLE
           </h1>
 
