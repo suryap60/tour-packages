@@ -6,7 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
+import Link from "next/link";
 
 export default function BookNowSection() {
   const prevRef = useRef(null);
@@ -119,11 +120,13 @@ export default function BookNowSection() {
                       width={120}
                       height={18}
                     />
-                    <button
-                      className={`mt-5 w-full py-2.5 ${card.buttonBg} ${card.buttonText} text-lg font-semibold rounded-xl hover:opacity-90 transition cursor-pointer`}
+                    <Link
+                      href="/vendor"
+                      type="button"
+                      className={`mt-5 w-full py-2.5 ${card.buttonBg} ${card.buttonText} text-lg font-semibold  rounded-xl hover:opacity-90 transition cursor-pointer`}
                     >
                       Explore
-                    </button>
+                    </Link>
                   </div>
                 </SwiperSlide>
               ))}
