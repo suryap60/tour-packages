@@ -5,17 +5,18 @@ import Testimonials from "@/components/sections/package/Testimonials";
 import PackageGallery from "@/components/sections/package/PackageGallery";
 import BookTour from "@/components/sections/package/BookTour";
 import PackageHeader from "@/components/sections/package/PackageHeader";
-import Navbar from "@/components/layout/Navbar";
+import Navbar from "@/components/layout/NavbarTwo";
+import Footer from "@/components/layout/Footer";
 
 export default function Package() {
     const navigationItems = [
-    { label: "Home", href: "#", active: true },
-    { label: "Tours", href: "#", active: false },
+    { label: "Home", href: "/", active: true },
+    { label: "Tours", href: "/package", active: false },
     { label: "About", href: "#", active: false },
     { label: "Login", href: "#", active: false },
   ];
   return (
-    <main className="bg-white text-black ">
+    <div className="bg-white text-black max-w-screen overflow-hidden">
         <Navbar navigationItems={navigationItems} />
       <PackageHeader />
       <section className="[font-family:'Montserrat',Helvetica] text-lg container mx-auto px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 py-10 text-2xl font-light">
@@ -30,6 +31,6 @@ export default function Package() {
       <Testimonials />
       <PackageGallery />
       <BookTour />
-    </main>
+    </div>
   );
 }

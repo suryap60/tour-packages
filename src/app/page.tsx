@@ -8,8 +8,8 @@ import Image from "next/image";
 
 export default function Home() {
   const navigationItems = [
-    { label: "Home", href: "#", active: true },
-    { label: "Tours", href: "#", active: false },
+    { label: "Home", href: "/", active: true },
+    { label: "Tours", href: "/package", active: false },
     { label: "About", href: "#", active: false },
     { label: "Login", href: "#", active: false },
   ];

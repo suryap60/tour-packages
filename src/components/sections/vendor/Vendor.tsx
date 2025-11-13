@@ -151,7 +151,7 @@ export default function VendorDetails() {
                         height={18}
                       />
                       <Link
-                        href="/vendor"
+                        href="/package"
                         type="button"
                         className={`mt-5 w-full py-2.5 ${card.buttonBg} ${card.buttonText} text-lg font-semibold  rounded-xl hover:opacity-90 transition cursor-pointer`}
                       >

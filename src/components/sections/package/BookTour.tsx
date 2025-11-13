@@ -2,7 +2,7 @@ import { ChevronDownIcon } from "lucide-react";
 
 export default function BookTour() {
   return (
-    <section className="py-20 container mx-auto px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 bg-white">
+    <section className="py-20 container mx-auto px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 bg-white p-3">
       <h2 className="text-3xl font-semibold text-black mb-10">Book Tour</h2>
 
       <form className="grid md:grid-cols-2 gap-6">
@@ -10,7 +10,7 @@ export default function BookTour() {
           <label className="font-semibold text-xl">Full Name</label>
           <input
             type="text"
-            className="mt-2 w-full bg-transparent [font-family:'Montserrat',Helvetica] text-lg"
+            className="mt-2 w-full bg-transparent [font-family:'Montserrat',Helvetica] text-lg p-3"
             placeholder="Lorem Ipsum"
           />
         </div>
@@ -19,7 +19,7 @@ export default function BookTour() {
           <label className="font-semibold text-xl">Starting Date</label>
           <input
             type="date"
-            className="mt-2 w-full bg-transparent [font-family:'Montserrat',Helvetica] text-lg"
+            className="mt-2 w-full bg-transparent [font-family:'Montserrat',Helvetica] text-lg p-3"
           />
           <ChevronDownIcon className="absolute right-6 top-10" />
         </div>
@@ -28,7 +28,7 @@ export default function BookTour() {
           <label className="font-semibold text-xl">Number of Guests</label>
           <input
             type="number"
-            className="mt-2 w-full bg-transparent [font-family:'Montserrat',Helvetica] text-lg"
+            className="mt-2 w-full bg-transparent [font-family:'Montserrat',Helvetica] text-lg p-3"
             placeholder="2 Adults"
           />
         </div>
