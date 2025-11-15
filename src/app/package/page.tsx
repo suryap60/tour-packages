@@ -9,11 +9,11 @@ import Navbar from "@/components/layout/NavbarTwo";
 import Footer from "@/components/layout/Footer";
 
 export default function Package() {
-    const navigationItems = [
+  const navigationItems = [
     { label: "Home", href: "/", active: true },
     { label: "Tours", href: "/package", active: false },
-    { label: "About", href: "#", active: false },
-    { label: "Login", href: "#", active: false },
+    { label: "About", href: "about", active: false },
+    { label: "Login", href: "login", active: false },
   ];
   return (
     <div className="bg-white text-black max-w-screen overflow-hidden">

@@ -72,7 +72,7 @@ const Navbar: React.FC<NavMenuProps> = ({ navigationItems }) => {
 
           {/* Register Button */}
           <Link
-            href="#"
+            href="/signup"
             className={`font-medium text-base primary-color transition-colors duration-300 cursor-pointer ${
               scrolled ? "" : "drop-shadow-md"
             }`}

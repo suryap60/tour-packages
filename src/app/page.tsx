@@ -10,8 +10,8 @@ export default function Home() {
   const navigationItems = [
     { label: "Home", href: "/", active: true },
     { label: "Tours", href: "/package", active: false },
-    { label: "About", href: "#", active: false },
-    { label: "Login", href: "#", active: false },
+    { label: "About", href: "about", active: false },
+    { label: "Login", href: "login", active: false },
   ];
 
   return (
