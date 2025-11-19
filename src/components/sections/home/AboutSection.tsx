@@ -26,7 +26,7 @@ export default function AboutSection() {
         <Image
           className="w-full h-full object-cover"
           alt="Background"
-          src="/assets/imgs/banner/beach.jpg"
+          src="/assets/imgs/banner/6.jpg"
           width={1440}
           height={1080}
           priority

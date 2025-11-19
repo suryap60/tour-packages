@@ -46,7 +46,7 @@ export default function BookNowSection() {
       <Image
         className="absolute inset-0 w-full h-full object-cover"
         alt="Background"
-        src="/assets/imgs/banner/beach.jpg"
+        src="/assets/imgs/banner/3.jpg"
         width={1440}
         height={1080}
         priority

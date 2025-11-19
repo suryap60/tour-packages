@@ -8,7 +8,7 @@ export default function DiscoverSection() {
         <Image
           className="absolute inset-0 w-full h-full object-cover"
           alt="Background image"
-          src="/assets/imgs/banner/beach.jpg"
+          src="/assets/imgs/banner/2.jpg"
           width={1440}
           height={4823}
           priority

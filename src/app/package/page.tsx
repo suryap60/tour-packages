@@ -15,6 +15,7 @@ export default function Package() {
     { label: "About", href: "about", active: false },
     { label: "Login", href: "login", active: false },
   ];
+  
   return (
     <div className="bg-white text-black max-w-screen overflow-hidden">
         <Navbar navigationItems={navigationItems} />
