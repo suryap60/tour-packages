@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function DiscoverSection() {
   return (
@@ -32,9 +33,10 @@ export default function DiscoverSection() {
                     of type and scrambled it to make a type specimen book.
                     </p>
 
-                    <button className="mt-8 border border-[#ffe500] text-[#ffe500] text-xl font-extralight px-8 py-3 rounded-[20px] hover:bg-[#ffe500] hover:text-white transition-all duration-300 cursor-pointer">
-                    Explore →
-                    </button>
+                    <Link href="/packages"type="button"  className="mt-12 border border-[#ffe500] text-[#ffe500] text-xl font-extralight px-8 py-3 rounded-[20px] hover:bg-[#ffe500] hover:text-white transition-all duration-300 cursor-pointer">
+                            Explore →
+
+                    </Link>
                 </div>
 
                 {/* Image Section */}

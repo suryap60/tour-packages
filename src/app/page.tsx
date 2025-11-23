@@ -53,7 +53,7 @@ export default function Home() {
       </div>
       <DiscoverSection/>
       <BookNowSection/>
-      <Reviews/>
+      {/* <Reviews/> */}
       <AboutSection/>
       <Footer/>
     </>
