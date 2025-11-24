@@ -26,17 +26,19 @@ export default function DiscoverSection() {
                     <h2 className="text-white font-extrabold primary-color text-xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
                     Lakshadweep
                     </h2>
-                    <p className="[font-family:'Montserrat',Helvetica] text-lg text-gray-200 max-w-3xl lg:text-left">
+                    <p className="[font-family:'Montserrat',Helvetica] text-lg text-gray-200 max-w-3xl lg:text-left mb-4">
                     Lorem Ipsum is simply dummy text of the printing and typesetting
                     industry. Lorem Ipsum has been the industry&#39;s standard dummy
                     text ever since the 1500s, when an unknown printer took a galley
                     of type and scrambled it to make a type specimen book.
                     </p>
 
-                    <Link href="/packages"type="button"  className="mt-12 border border-[#ffe500] text-[#ffe500] text-xl font-extralight px-8 py-3 rounded-[20px] hover:bg-[#ffe500] hover:text-white transition-all duration-300 cursor-pointer">
+                    <div>
+                      <Link href="/packages" className="mt-20 my-4 border border-[#ffe500] text-[#ffe500] text-xl font-extralight px-8 py-3 rounded-[20px] hover:bg-[#ffe500] hover:text-white transition-all duration-300 cursor-pointer">
                             Explore →
 
                     </Link>
+                    </div>
                 </div>
 
                 {/* Image Section */}
