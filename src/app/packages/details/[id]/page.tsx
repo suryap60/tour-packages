@@ -1,5 +1,5 @@
 import { getTourById, tours } from "@/lib/tours";
-import TourPackageDetail from "../TourPackageDetail";
+import TourPackageDetail from "../../TourPackageDetails";
 
 interface PageProps {
   params: Promise<{ id: string }>;
