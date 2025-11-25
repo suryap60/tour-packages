@@ -39,7 +39,7 @@ export default function Packages() {
         />
         <div className="absolute inset-0 bg-black/20" />
         
-        <div className="absolute bottom-0 left-0 right-0 container mx-auto px-6 pb-10">
+        <div className="absolute bottom-0 left-0 right-0 container mx-auto px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 pb-10">
           <h2 className="font-semibold text-white text-3xl md:text-4xl mb-2">
             Tour Packages
           </h2>
@@ -50,9 +50,9 @@ export default function Packages() {
       </div>
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 py-8">
         {/* Search Bar */}
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <div className="max-w-md">
             <input
               type="text"
@@ -62,7 +62,7 @@ export default function Packages() {
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Results Count */}
         <div className="mb-6">

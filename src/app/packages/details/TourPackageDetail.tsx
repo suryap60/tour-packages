@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "@/components/layout/NavbarTwo";
-import { TourPackage } from "@/components/sections/packages/TourPackageCard";
+import { TourPackage } from "@/lib/tours";
 import { 
   MapPin, 
   Clock, 
@@ -10,8 +10,7 @@ import {
   Check,
   Plane,
   Hotel,
-  Utensils,
-  Camera
+  Utensils
 } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
@@ -37,7 +36,7 @@ export default function TourPackageDetail({ tour }: TourPackageDetailProps) {
       <div className="relative h-[500px] overflow-hidden">
         <Navbar navigationItems={navigationItems} />
         <Image
-          src={tour.image || '/assets/imgs/banner/discover1.png'}
+          src={tour.image}
           alt={tour.title}
           className="w-full h-full object-cover"
           fill
@@ -46,7 +45,7 @@ export default function TourPackageDetail({ tour }: TourPackageDetailProps) {
         <div className="absolute inset-0 bg-black/20" />
         
         <div className="absolute bottom-0 left-0 right-0 text-white p-8">
-          <div className="container mx-auto">
+          <div className="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
             {tour.featured && (
               <div className="mb-4 inline-flex bg-yellow-500 rounded-full px-3 py-1 text-sm font-medium">
                 Featured Tour
@@ -76,7 +75,7 @@ export default function TourPackageDetail({ tour }: TourPackageDetailProps) {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Column - Tour Details */}
           <div className="lg:col-span-2 space-y-6">
@@ -84,7 +83,7 @@ export default function TourPackageDetail({ tour }: TourPackageDetailProps) {
             <div className="bg-white rounded-lg shadow-sm border p-6">
               <h2 className="text-xl font-semibold text-black mb-4">Overview</h2>
               <p className="text-gray-600 leading-relaxed">
-                {tour.description || "Experience the adventure of a lifetime with this amazing tour package."}
+                {tour.description}
               </p>
             </div>
 
@@ -130,9 +129,7 @@ export default function TourPackageDetail({ tour }: TourPackageDetailProps) {
                           <p className="text-gray-600 text-sm">{day.description}</p>
                         </div>
                       </div>
-                    )) || (
-                      <p className="text-gray-600">Itinerary details coming soon.</p>
-                    )}
+                    ))}
                   </div>
                 )}
 
@@ -143,10 +140,38 @@ export default function TourPackageDetail({ tour }: TourPackageDetailProps) {
                         <Plane className="w-5 h-5 text-blue-600" />
                         Getting There
                       </h3>
-                      <p className="text-sm text-gray-600">
-                        {tour.gettingThere || "Travel arrangements will be provided upon booking."}
-                      </p>
+                      <p className="text-sm text-gray-600">{tour.gettingThere}</p>
                     </div>
+
+                    <div className="border-t pt-6">
+                      <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                        <Hotel className="w-5 h-5 text-blue-600" />
+                        Accommodation
+                      </h3>
+                      <p className="text-sm text-gray-600">{tour.accommodation}</p>
+                    </div>
+
+                    <div className="border-t pt-6">
+                      <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                        <Utensils className="w-5 h-5 text-blue-600" />
+                        Meals
+                      </h3>
+                      <p className="text-sm text-gray-600">{tour.meals}</p>
+                    </div>
+
+                    {tour.importantNotes && (
+                      <div className="border-t pt-6">
+                        <h3 className="text-lg font-semibold mb-3 text-gray-600">Important Notes</h3>
+                        <ul className="space-y-2">
+                          {tour.importantNotes.map((note, index) => (
+                            <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
+                              <span className="text-blue-600 mt-1">•</span>
+                              <span>{note}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
@@ -223,6 +248,23 @@ export default function TourPackageDetail({ tour }: TourPackageDetailProps) {
               >
                 Back to Tours
               </Link>
+
+              <div className="border-t my-6"></div>
+
+              <div className="space-y-3 text-sm">
+                <div className="flex items-center gap-2 text-gray-600">
+                  <Check className="w-4 h-4 text-green-600" />
+                  <span>Free cancellation up to 24 hours</span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-600">
+                  <Check className="w-4 h-4 text-green-600" />
+                  <span>Reserve now, pay later</span>
+                </div>
+                <div className="flex items-center gap-2 text-gray-600">
+                  <Check className="w-4 h-4 text-green-600" />
+                  <span>Secure payment</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,34 +1,10 @@
 "use client";
+import { TourPackage } from "@/lib/tours";
 import { MapPin, Clock, Users, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export interface TourPackage {
-  id: string;
-  title: string;
-  destination: string;
-  duration: string;
-  price: number;
-  rating: number;
-  reviews: number;
-  image: string;
-  groupSize: string;
-  featured?: boolean;
-  highlights: string[];
-  description?: string;
-  itinerary?: {
-    day: number;
-    title: string;
-    description: string;
-    activities?: string[];
-  }[];
-  inclusions?: string[];
-  exclusions?: string[];
-  gettingThere?: string;
-  accommodation?: string;
-  meals?: string;
-  importantNotes?: string[];
-}
+
 
 interface TourPackageCardProps {
   tour: TourPackage;
