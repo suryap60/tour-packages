@@ -93,7 +93,7 @@ export function TourPackageCard({ tour }: TourPackageCardProps) {
             ${tour.price.toLocaleString()}
           </p>
         </div>
-        <Link href={`/packages/details`}  className="text-black">View Details</Link>
+        <Link href={`/packages/details/${tour.id}`}  className="text-black">View Details</Link>
       </div>
     </div>
   );
