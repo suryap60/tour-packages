@@ -24,7 +24,7 @@ export default function Home() {
           src="/assets/imgs/banner/1.jpg"
           width={1440}
           height={4823}
-          priority
+          loading="lazy"
         />
 
         {/* Overlay Gradient */}
