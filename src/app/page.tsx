@@ -1,3 +1,4 @@
+import BlurText from "@/components/common/BlurText";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import AboutSection from "@/components/sections/home/AboutSection";
@@ -43,12 +44,41 @@ export default function Home() {
             TITLE
           </h1>
 
-          <p className="[font-family:'Montserrat',Helvetica] text-lg text-gray-200 max-w-3xl">
+          <BlurText
+                text="Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book."
+                delay={20}
+                animateBy="characters"
+                direction="top"
+                triggerOnce={false}
+                className="[font-family:'Montserrat',Helvetica] text-lg text-gray-200 max-w-3xl"
+                animationFrom={{
+                  filter: "blur(10px)",
+                  opacity: 0,
+                  y: -30,
+                }}
+                animationTo={[
+                  {
+                    filter: "blur(3px)",
+                    opacity: 0.7,
+                    y: -5,
+                  },
+                  {
+                    filter: "blur(0px)",
+                    opacity: 1,
+                    y: 0,
+                  },
+                ]}
+              />
+
+          {/* <p className="[font-family:'Montserrat',Helvetica] text-lg text-gray-200 max-w-3xl">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&#39;s standard dummy
             text ever since the 1500s, when an unknown printer took a galley of
             type and scrambled it to make a type specimen book.
-          </p>
+          </p> */}
         </section>
       </div>
       <DiscoverSection/>
