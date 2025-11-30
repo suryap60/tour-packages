@@ -20,9 +20,9 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="relative w-full bg-white overflow-hidden">
+    <section className="relative w-full bg-transparent overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <Image
           className="w-full h-full object-cover"
           alt="Background"
@@ -31,7 +31,7 @@ export default function AboutSection() {
           height={1080}
           priority
         />
-      </div>
+      </div> */}
 
       {/* Content Container */}
       <div className="relative z-10 container mx-auto px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 py-16 sm:py-20">

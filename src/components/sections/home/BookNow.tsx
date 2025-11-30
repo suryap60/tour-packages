@@ -41,16 +41,16 @@ export default function BookNowSection() {
   ];
 
   return (
-    <section className="relative w-full min-h-screen overflow-hidden flex items-center justify-center bg-white">
+    <section className="relative w-full min-h-screen overflow-hidden flex items-center justify-center bg-transparent">
       {/* Background */}
-      <Image
+      {/* <Image
         className="absolute inset-0 w-full h-full object-cover"
         alt="Background"
         src="/assets/imgs/banner/3.jpg"
         width={1440}
         height={1080}
         priority
-      />
+      /> */}
 
       {/* Overlay + Content */}
       <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-20">

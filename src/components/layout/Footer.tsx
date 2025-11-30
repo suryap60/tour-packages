@@ -8,16 +8,16 @@ import { FaInstagram } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <section className="relative w-full bg-white overflow-hidden flex items-center justify-center">
+    <section className="relative w-full bg-transparent overflow-hidden flex items-center justify-center">
       {/* Background Image */}
-      <Image
+      {/* <Image
         className="absolute inset-0 w-full h-full object-cover"
         alt="Background"
         src="/assets/imgs/banner/7.jpg"
         width={1440}
         height={1080}
         priority
-      />
+      /> */}
 
       {/* Footer Content */}
       <footer className="relative z-10 w-full">

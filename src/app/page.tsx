@@ -10,23 +10,32 @@ import Image from "next/image";
 export default function Home() {
   const navigationItems = [
     { label: "Home", href: "/", active: true },
-    { label: "Tours", href: "/package", active: false },
+    { label: "Packages", href: "/packages", active: false },
     { label: "About", href: "about", active: false },
     { label: "Login", href: "login", active: false },
   ];
 
   return (
-    <>
-      <div className="relative w-full min-h-screen overflow-hidden bg-white">
+    <div className="relative">
+      {/* Background */}
+      <Image
+        className="absolute inset-0 w-full h-full object-cover"
+        alt="Background"
+        src="/assets/imgs/banner/background_image 2.png"
+        width={1440}
+        height={1080}
+        priority
+      />
+      <div className="relative w-full min-h-screen overflow-hidden bg-transparent">
         {/* Background Image */}
-        <Image
+        {/* <Image
           className="absolute inset-0 w-full h-full object-cover"
           alt="Background image"
           src="/assets/imgs/banner/1.jpg"
           width={1440}
           height={4823}
           loading="lazy"
-        />
+        /> */}
 
         {/* Overlay Gradient */}
         <div className="absolute inset-0 bg-black/20" />
@@ -45,33 +54,33 @@ export default function Home() {
           </h1>
 
           <BlurText
-                text="Lorem Ipsum is simply dummy text of the printing and typesetting
+            text="Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
             text ever since the 1500s, when an unknown printer took a galley of
             type and scrambled it to make a type specimen book."
-                delay={20}
-                animateBy="characters"
-                direction="top"
-                triggerOnce={false}
-                className="[font-family:'Montserrat',Helvetica] text-lg text-gray-200 max-w-3xl"
-                animationFrom={{
-                  filter: "blur(10px)",
-                  opacity: 0,
-                  y: -30,
-                }}
-                animationTo={[
-                  {
-                    filter: "blur(3px)",
-                    opacity: 0.7,
-                    y: -5,
-                  },
-                  {
-                    filter: "blur(0px)",
-                    opacity: 1,
-                    y: 0,
-                  },
-                ]}
-              />
+            delay={20}
+            animateBy="characters"
+            direction="top"
+            triggerOnce={false}
+            className="[font-family:'Montserrat',Helvetica] text-lg text-gray-200 max-w-3xl"
+            animationFrom={{
+              filter: "blur(10px)",
+              opacity: 0,
+              y: -30,
+            }}
+            animationTo={[
+              {
+                filter: "blur(3px)",
+                opacity: 0.7,
+                y: -5,
+              },
+              {
+                filter: "blur(0px)",
+                opacity: 1,
+                y: 0,
+              },
+            ]}
+          />
 
           {/* <p className="[font-family:'Montserrat',Helvetica] text-lg text-gray-200 max-w-3xl">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -86,6 +95,6 @@ export default function Home() {
       {/* <Reviews/> */}
       <AboutSection/>
       <Footer/>
-    </>
+    </div>
   );
 }

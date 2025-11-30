@@ -4,16 +4,16 @@ import Link from "next/link";
 export default function DiscoverSection() {
   return (
     <>
-      <div className="relative w-full min-h-screen overflow-hidden bg-white flex items-center justify-center">
+      <div className="relative w-full min-h-screen overflow-hidden bg-transparent flex items-center justify-center">
         {/* Background Image */}
-        <Image
+        {/* <Image
           className="absolute inset-0 w-full h-full object-cover"
           alt="Background image"
           src="/assets/imgs/banner/2.jpg"
           width={1440}
           height={4823}
           priority
-        />
+        /> */}
 
         {/* Overlay Gradient */}
         <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-20">

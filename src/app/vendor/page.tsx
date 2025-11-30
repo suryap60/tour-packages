@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Vendor() {
   const navigationItems = [
     { label: "Home", href: "/", active: true },
-    { label: "Tours", href: "/package", active: false },
+    { label: "Packages", href: "/packages", active: false },
     { label: "About", href: "about", active: false },
     { label: "Login", href: "login", active: false },
   ];

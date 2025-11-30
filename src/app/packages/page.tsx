@@ -4,6 +4,7 @@ import { TourPackageCard } from "@/components/sections/packages/TourPackageCard"
 import Navbar from "@/components/layout/NavbarTwo";
 import Image from "next/image";
 import { tours } from "@/lib/tours";
+import Footer from "@/components/layout/Footer";
 
 export default function Packages() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -19,7 +20,7 @@ export default function Packages() {
 
   const navigationItems = [
     { label: "Home", href: "/", active: false },
-    { label: "Tours", href: "/packages", active: true },
+    { label: "Packages", href: "/packages", active: true },
     { label: "About", href: "/about", active: false },
     { label: "Login", href: "/login", active: false },
   ];
@@ -91,6 +92,8 @@ export default function Packages() {
           </div>
         )}
       </main>
+
+      <Footer />
     </div>
   );
 }

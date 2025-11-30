@@ -1,18 +1,16 @@
 import PackageIncludes from "@/components/sections/package/PackageIncludes";
 import PackageExcludes from "@/components/sections/package/PackageExcludes";
 import TravelPlans from "@/components/sections/package/TravelPlans";
-import Testimonials from "@/components/sections/package/Testimonials";
 import PackageGallery from "@/components/sections/package/PackageGallery";
 import BookTour from "@/components/sections/package/BookTour";
-import PackageHeader from "@/components/sections/package/PackageHeader";
 import Navbar from "@/components/layout/NavbarTwo";
-import Footer from "@/components/layout/Footer";
 import Image from "next/image";
+import Footer from "@/components/layout/Footer";
 
 export default function Package() {
   const navigationItems = [
     { label: "Home", href: "/", active: true },
-    { label: "Tours", href: "/package", active: false },
+    { label: "Packages", href: "/packages", active: false },
     { label: "About", href: "about", active: false },
     { label: "Login", href: "login", active: false },
   ];
@@ -58,6 +56,7 @@ export default function Package() {
       {/* <Testimonials /> */}
       <PackageGallery />
       <BookTour />
+      <Footer />
     </div>
   );
 }
