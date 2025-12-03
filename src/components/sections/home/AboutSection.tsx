@@ -93,7 +93,7 @@ export default function AboutSection() {
             {whyChooseUsItems.map((item, index) => (
               <div
                 key={index}
-                className="hover:bg-white/20 transition"
+                className=" transition"
               >
                 <h3 className="text-2xl font-semibold primary-color mb-4">
                   {item.title}

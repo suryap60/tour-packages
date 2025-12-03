@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useRef } from "react";
@@ -79,7 +79,11 @@ export default function BookNowSection() {
             </button>
 
             <Swiper
-              modules={[Navigation]}
+              modules={[Navigation, Autoplay]}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
               onBeforeInit={(swiper) => {
                 if (swiper.params.navigation && typeof swiper.params.navigation !== "boolean") {
                     swiper.params.navigation.prevEl = prevRef.current;
