@@ -69,7 +69,7 @@ export function TourPackageCard({ tour }: TourPackageCardProps) {
             ${tour.price.toLocaleString()}
           </p>
         </div>
-        <Link href={`/packages/details/${tour.id}`}  className="mt-5 w-fit px-4 py-2 text-white bg-gray-900 text-sm font-semibold rounded-xl hover:opacity-90 transition cursor-pointer">View Details</Link>
+        <Link href={`/packages/details/${tour.id}`}  className="mt-5 w-fit bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-full transition-colors duration-200 cursor-pointer">View Details</Link>
       </div>
     </div>
   );

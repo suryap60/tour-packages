@@ -69,18 +69,18 @@ export default function VendorDetails() {
   return (
     <section className="relative w-full min-h-screen overflow-hidden flex items-center justify-center bg-white">
       {/* Background */}
-      <Image
+      {/* <Image
         className="absolute inset-0 w-full h-full object-cover"
         alt="Background"
         src="/assets/imgs/banner/beach.jpg"
         width={1440}
         height={1080}
         priority
-      />
+      /> */}
 
       {/* Overlay + Content */}
       <div className="relative z-10 container mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-20">
-        <div className="bg-black/20 rounded-3xl p-8 sm:p-10 md:p-14 text-white">
+        <div className="bg-black/30 rounded-3xl p-8 sm:p-10 md:p-14 text-white">
         {/* booking */}
           <div>
             {/* Heading */}
@@ -165,7 +165,7 @@ export default function VendorDetails() {
           </div>
 
             {/* Reviews Section */}
-          <Review/>
+          {/* <Review/> */}
 
           <Gallery/>
         </div>
